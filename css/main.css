@@ -1,0 +1,69 @@
+html,
+body {
+	height: 100%;
+	font-family: 'oxygen', arial, helvetica, sans-serif;
+	background-color: #333;
+}
+
+.container {
+	height: 100%;
+	width: inherit;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.row {
+	max-width: 100%;
+}
+
+body {
+	background-image: url(../images/backgrounds/11.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+header {
+	clear: both;
+	overflow: hidden;
+	padding: 10px 20px;
+	margin: 0 -20px;
+	background-color: rgba(51,51,51,.9);
+}
+header  img{
+	margin: 0;
+	padding: 0;
+	max-height: 100px;
+}
+.homeNav {
+	margin-top: 5%;
+	text-align: center;
+}
+.homeNav ul {
+	clear: both;
+	overflow: hidden;
+	padding-right: 20px;
+	padding-left: 20px;
+	list-style-type: none;
+	background: rgba(115,186,181,.5);
+}
+.homeNav li a {
+	display: block;
+	margin: 20px auto;
+	padding: 20px;
+	max-width: 200px;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: normal;
+	color: #00736b;
+	background: #ececec;
+	border-radius: 10px;
+	border: solid 1px #00736b;
+	box-shadow: 5px 5px 5px rgba(51,51,51,0.3);
+}
+.logo {
+	display: block;
+	max-width: 600px;
+	margin: auto auto 5%;
+}
