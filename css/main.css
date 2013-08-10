@@ -16,11 +16,12 @@ a {
 .row {
 	max-width: 1500px;
 }
-body {
+html {
 	background-image: url(../images/backgrounds/11.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+	background-attachment: fixed;
 }
 ul {
 	list-style-type: none;
