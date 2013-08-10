@@ -40,6 +40,7 @@ header {
 	clear: both;
 	overflow: hidden;
 	padding: 20px;
+	background: rgba(51,51,51,0.8);
 }
 header  img{
 	display: block;
@@ -99,7 +100,7 @@ header nav a {
 .pageContent {
 	clear: both;
 	overflow: hidden;
-	padding: 40px;
+	padding: 20px;
 	color: #ececec;
 	background: rgba(115,186,181,.5);
 }
@@ -117,13 +118,15 @@ h2 {
 }
 .refineSearch,
 article {
-	padding: 20px;
 	margin-bottom: 20px;
 	color: #666;
 	background: #ececec;
 	border: solid 1px #ccc;
 	box-shadow: 3px 3px 3px rgba(51,51,51,0.2);
 	border-radius: 5px;
+}
+article {
+	padding: 20px;
 }
 .refineSearch h2 {
 	display: block;
@@ -177,7 +180,7 @@ article {
 	overflow: hidden;
 	margin-bottom: 20px;
 	font-size: 1.1em;
-	text-shadow: 1px 1px 1px #fff;
+	text-shadow: 1px 1px 1px #333;
 	font-weight: bold;
 	text-align: right;
 }
@@ -221,6 +224,41 @@ article {
 	padding-right: 20px;
 	border-right: solid 1px #ccc;
 }
+.phone,
+.address {
+	margin-bottom: 20px;
+}
 .searchResults .phone {
 	margin-bottom: 10px;
+}
+iframe {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 900px) {
+	header img {
+		margin: 0 auto;
+	}
+	header nav a {
+		padding: 10px;
+	}
+	header nav li {
+		margin-left: 0px;
+	}
+	header nav ul {
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.col_12 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.pageContent {
+		padding: 20px;
+	}
+	.searchResults article {
+		height: auto;
+	}
 }
