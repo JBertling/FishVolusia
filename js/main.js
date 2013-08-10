@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	getResultCount();
 	sortResults();
-	
+
 	function getResultCount() {
 		var countResults = 0;
 		$(".searchResults article").not(":hidden").each(function() {
@@ -21,8 +21,8 @@ $(document).ready(function() {
 	
 	function sortResults() {
 		$(".refineSearch .refinement").click(function() {
-			$(this).siblings().removeClass("active");
-			$(this).addClass("active");
+			$(".refinement").removeClass("active").children(".close").remove();
+			$(this).addClass("active").prepend("<span class='close'>&times;</span>");
 			var dataSet = $(this).parent().attr("data-set");
 			var getDataSet = "data-" + dataSet;
 			if (dataSet == "city") {
@@ -47,3 +47,6 @@ $(document).ready(function() {
 		});
 	}
 });
+
+// PLUGINS
+// Maps

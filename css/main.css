@@ -10,7 +10,9 @@ body {
 	padding-right: 0;
 	padding-left: 0;
 }
-
+a {
+	color: #53a6a0;
+}
 .row {
 	max-width: 1500px;
 }
@@ -22,6 +24,17 @@ body {
 }
 ul {
 	list-style-type: none;
+}
+.button {
+	display: inline-block;
+	padding: 5px;
+	color: #fff;
+	text-shadow: 1px 1px 1px #53a6a0;
+	text-align: center;
+	text-decoration: none;
+	background: #73bab5;
+	border: solid 1px #53a6a0;
+	border-radius: 5px;
 }
 header {
 	clear: both;
@@ -64,7 +77,7 @@ header nav a {
 }
 .homeNav li a {
 	display: block;
-	margin: 30px auto 0;
+	margin: 30px auto;
 	padding: 20px;
 	max-width: 200px;
 	font-size: 1.3em;
@@ -87,14 +100,14 @@ header nav a {
 	clear: both;
 	overflow: hidden;
 	padding: 40px;
-	color: #666;
-	background: rgba(236,236,236,.9);
+	color: #ececec;
+	background: rgba(115,186,181,.5);
 }
 h1 {
 	margin: 0 0 20px;
 	padding: 0 0 20px;
 	font-weight: 700;
-	text-shadow: 1px 1px 1px #fff;
+	text-shadow: 1px 1px 1px #333;
 	border-bottom: dotted 3px #ccc;
 }
 h2 {
@@ -103,7 +116,9 @@ h2 {
 	font-size: 1.2em;
 }
 .refineSearch,
-.searchResults article {
+article {
+	padding: 20px;
+	margin-bottom: 20px;
 	color: #666;
 	background: #ececec;
 	border: solid 1px #ccc;
@@ -127,11 +142,13 @@ h2 {
 	padding: 10px;
 	font-size: .9em;
 	font-weight: bold;
+	color: #666;
 	background: #d7e1e0;
 }
 .refineSearch .refinement {
 	cursor: pointer;
 	padding: 10px;
+	color: #53a6a0;
 	font-size: .8em;
 	border-top: solid 1px #ccc;
 }
@@ -139,16 +156,29 @@ h2 {
 	border-top: 0;
 }
 .refineSearch li.active {
-	background: red;
+	color: #666;
+}
+.refineSearch .close {
+	display: inline-block;
+	vertical-align: middle;
+	height: 20px;
+	width: 20px;
+	margin-right: 10px;
+	color: #ececec;
+	text-align: center;
+	line-height: 17px;
+	font-size: 1.3em;
+	font-weight: bold;
+	background: #666;
+	border-radius: 10px;
 }
 .results {
 	clear: both;
 	overflow: hidden;
 	margin-bottom: 20px;
-	color: #73bab5;
+	font-size: 1.1em;
+	text-shadow: 1px 1px 1px #fff;
 	font-weight: bold;
-}
-.resultsCount {
 	text-align: right;
 }
 .searchResults .noResultsFound {
@@ -161,6 +191,36 @@ h2 {
 	font-weight: bold;
 }
 .searchResults article {
-	padding: 20px;
-	margin-bottom: 20px;
+	clear: both;
+	overflow: hidden;
+	height: 150px;
+	font-size: .9em;
+}
+.searchResults article h2 {
+	font-size: 1.3em;
+	margin: 0 0 20px;
+}
+.searchResults article h2 a {
+	text-decoration: none;
+	color: #73bab5;
+}
+.searchResults .locationSummary ul {
+	padding-left: 20px;
+	border-left: solid 1px #ccc;
+}
+.searchResults .locationSummary {
+	position: relative;
+	height: 100%;
+}
+.searchResults .locationSummary .button {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.searchResults .locationImage {
+	padding-right: 20px;
+	border-right: solid 1px #ccc;
+}
+.searchResults .phone {
+	margin-bottom: 10px;
 }
