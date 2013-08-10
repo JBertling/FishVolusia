@@ -9,38 +9,87 @@
 		<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/werewolf.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <style>
+        	body {
+				background-image: url(images/backgrounds/7.jpg);
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: cover;
+				background-attachment: fixed;
+			}
+        </style>
     </head>
     <body>
     	<div class="container">
+    		<div class="row">
+    			<div class="col_12">
+    				<header>
+	    				<div class="col_4_12_9">
+							<a href="index.html" title="Fish Volusia County, Florida" class="logo">
+								<img src="images/FishVolusiaCountyLogo.png" alt="Fish Volusa County, Florida Logo" />
+							</a>
+	    				</div>
+	    				<nav class="col_8_12_3 omega">
+	    					<span class="mobileNavTrigger mobile-only">Nav</span>
+	    					<ul class="mobile-hide">
+	    						<li><a href="public-fishing-spots.html" title="">Fishing Spots</a></li>
+	    						<li><a href="local-bait-shops.html" title="">Bait Shops</a></li>
+	    						<li><a href="common-catches.html" title="">Common Catches</a></li>
+	    					</ul>
+	    				</nav>
+    				</header>
+    			</div>
+    		</div>
 			<section class="row">
-				<div class="col_12 homeNav">
-					<a href="#" title="Fish Volusia County, Florida" class="logo">
-						<img src="images/FishVolusiaCountyLogo.png" alt="Fish Volusa County Logo" />
-					</a>
-					<nav>
-						<ul>
-							<li class="col_4_4_12">
-								<a href="" title="">
-									<p class="linkIcon">Icon</p>
-									Fishing Spots
-								</a>
-							</li>
-							<li class="col_4_4_12">
-								<a href="" title="">
-									<p class="linkIcon">Icon</p>
-									Bait Shops
-								</a>
-							</li>
-							<li class="col_4_4_12 omega">
-								<a href="" title="">
-									<p class="linkIcon">Icon</p>
-									Common Catches
-								</a>
-							</li>
-						</ul>
-					</nav>
+				<div class="col_12">
+					<div class="pageContent">
+						<h1>Public Fishing Spots</h1>
+						<aside class="col_3_12_12">
+							<div class="refineSearch">
+								<h2>Refine Your Results</h2>
+								<h3>City</h3>
+								<ul data-set="city">
+									<li class="refinement" data-city="Daytona">Daytona Beach</li>
+									<li class="refinement" data-city="Daytona Beach Shores">Daytona Beach Shores</li>
+									<li class="refinement" data-city="New Symrna Beach">New Symrna Beach</li>
+									<li class="refinement" data-city="Ormond Beach">Ormond Beach</li>
+									<li class="refinement" data-city="Ormond By The Sea">Ormond By The Sea</li>
+									<li class="refinement" data-city="Port Orange">Port Orange</li>
+									<li class="refinement" data-city="South Daytona">South Daytona</li>
+								</ul>
+							</div>
+						</aside>
+						<section class="col_9_12_12 omega">
+							<div class="results omega">
+								<p class="resultsCount"><span>&nbsp;</span> Results</p>
+							</div>
+							<div class="searchResults">
+								<div class="noResultsFound">
+									No Results Found. Showing All Results.
+								</div>
+								<article data-city="Daytona">
+									city: daytona, 
+								</article>
+								<article data-city="Port Orange">
+									city: port orange,
+								</article>
+								<article data-city="Daytona">
+									city: daytona,
+								</article>
+								<article data-city="Ormond Beach">
+									city: ormond,
+								</article>
+								<article data-city="South Daytona">
+									city: south daytona,
+								</article>
+							</div>
+							
+						</section>
+					</div>
 				</div>
 			</section>
     	</div>
+    	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    	<script src="js/main.js"></script>  	
     </body>
 </html>
