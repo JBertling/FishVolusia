@@ -187,12 +187,14 @@ article {
 }
 .searchResults .noResultsFound {
 	display: none;
-	padding: 20px 0 40px;
+	padding: 20px 0 20px;
+	margin-bottom: 20px;
 	text-align: center;
-	color: #ab3434;
-	text-shadow: 1px 1px 1px #fff;
+	color: #ececec;
+	text-shadow: 1px 1px 1px #333;
 	font-size: 1.5em;
 	font-weight: bold;
+	background: #ab3434;
 }
 .searchResults article {
 	clear: both;
@@ -281,6 +283,9 @@ iframe {
 }
 .amenityIcon.large.boatLaunch {
 	background-position: 18px -143px;
+}
+.amenityIcon.small.boatLaunch {
+	background-position: -127px -185px;
 }
 .amenityIcon.large.handLaunch {
 	background-position: 18px -310px;
