@@ -196,7 +196,7 @@ article {
 }
 .searchResults .noResultsFound {
 	display: none;
-	padding: 20px 0 20px;
+	padding: 20px 10px 20px;
 	margin-bottom: 20px;
 	text-align: center;
 	color: #ececec;
@@ -233,11 +233,6 @@ article {
 	bottom: 0;
 	right: 0;
 }
-.searchResults .locationImage {
-	height: 153px;
-	padding-right: 20px;
-	border-right: solid 1px #ccc;
-}
 .phone,
 .address {
 	margin-bottom: 20px;
@@ -251,6 +246,9 @@ iframe {
 }
 .amenities li {
 	margin-top: 20px;
+	text-align: center;
+}
+.locationSummary li {
 	text-align: center;
 }
 .amenityIcon {
@@ -317,6 +315,13 @@ iframe {
 	header nav ul {
 		text-align: center;
 	}
+	.searchResults article {
+		height: auto;
+		min-height: 150px;
+	}
+	.searchResults .locationImage {
+		margin-bottom: 20px;
+	}
 }
 @media only screen and (max-width: 500px) {
 	.col_12 {
@@ -347,9 +352,6 @@ iframe {
 		position: static;
 	}
 	.searchResults .locationImage {
-		height: auto;
-		padding-right: 0;
-		border-right: 0;
 		margin-bottom: 20px;
 	}
 }
