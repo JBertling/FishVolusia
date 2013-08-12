@@ -209,6 +209,7 @@ article {
 	color: #73bab5;
 }
 .searchResults .locationSummary ul {
+	height: 153px;
 	padding-left: 20px;
 	border-left: solid 1px #ccc;
 }
@@ -222,6 +223,7 @@ article {
 	right: 0;
 }
 .searchResults .locationImage {
+	height: 153px;
 	padding-right: 20px;
 	border-right: solid 1px #ccc;
 }
@@ -236,6 +238,57 @@ iframe {
 	width: 100%;
 	margin-bottom: 20px;
 }
+.amenities li {
+	margin-top: 20px;
+	text-align: center;
+}
+.amenityIcon {
+	display: inline-block;
+	margin: 0 auto 5px;
+	background: #73bab5;
+}
+.amenityIcon.large {
+	height: 100px;
+	width: 100px;
+	background-image: url(../images/amenity-sprite.png);
+	background-repeat: no-repeat;
+	border-radius: 50px;
+}
+.amenityIcon.small {
+	height: 36px;
+	width: 36px;
+	background-image: url(../images/amenity-sprite.png);
+	background-repeat: no-repeat;
+	border-radius: 18px;
+}
+.amenityIcon.large.restrooms {
+	background-position: 18px 25px;
+}
+.amenityIcon.small.restrooms {
+	background-position: -129px -16px;
+}
+.amenityIcon.large.playground {
+	background-position: 20px -225px;
+}
+.amenityIcon.small.playground {
+	background-position: -127px -270px;
+}
+.amenityIcon.large.pavillion {
+	background-position: 15px -60px;
+}
+.amenityIcon.small.pavillion {
+	background-position: -127px -100px;
+}
+.amenityIcon.large.boatLaunch {
+	background-position: 18px -143px;
+}
+.amenityIcon.large.handLaunch {
+	background-position: 18px -310px;
+}
+.amenityIcon.small.handLaunch {
+	background-position: -127px -355px;
+}
+
 
 @media only screen and (min-width: 500px) and (max-width: 900px) {
 	header img {
@@ -270,5 +323,19 @@ iframe {
 	}
 	.homeNav li a {
 		margin: 10px auto;
+	}
+	.searchResults .locationSummary ul {
+		height: auto;
+		padding-left: 0;
+		border-left: 0;
+	}
+	.searchResults .locationSummary .button {
+		position: static;
+	}
+	.searchResults .locationImage {
+		height: auto;
+		padding-right: 0;
+		border-right: 0;
+		margin-bottom: 20px;
 	}
 }
