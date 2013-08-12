@@ -5,7 +5,6 @@ body {
 }
 
 .container {
-	height: 100%;
 	width: inherit;
 	padding-right: 0;
 	padding-left: 0;
@@ -37,7 +36,17 @@ ul {
 	border: solid 1px #53a6a0;
 	border-radius: 5px;
 }
-header {
+footer {
+	text-align: center;
+	font-size: .8em;
+	color: #ececec;
+}
+footer a {
+	color: inherit;
+	text-decoration: underline;
+}
+header,
+footer {
 	clear: both;
 	overflow: hidden;
 	padding: 20px;
