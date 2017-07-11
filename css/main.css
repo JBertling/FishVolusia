@@ -4,6 +4,11 @@ body {
 	font-family: 'oxygen', arial, helvetica, sans-serif;
 }
 
+.wrapper,
+.container {
+	height: 100%;
+}
+
 .container {
 	width: inherit;
 	padding-right: 0;
